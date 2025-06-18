@@ -13,6 +13,8 @@ img {
 
 section{
   margin-top: 2rem;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .button button {
@@ -21,6 +23,13 @@ section{
   border: none;
   background-color: #1668e3;
   color: white;
+}
+
+.section{
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 nav {
@@ -67,7 +76,6 @@ main .main-header {
   background-image: linear-gradient(rgba(0, 3, 6, 0.250), rgba(5, 9, 13, 0.250)), url("../images/www.fewo-direkt.de-1750235358358/VRBO_APFT2_BARCELONA_THERIN_HOUSE_2_4605_1.png_1.jpeg");
   background-position: center;
   height: 85vh;
-  /* justify-items: center; */
   align-content: center;
 }
 
@@ -163,10 +171,6 @@ form img {
   font-size: 20px;
 }
 
-.find {
-  padding: 10px 5%;
-}
-
 .section-header {
   color: #191e3b;
 }
@@ -203,11 +207,6 @@ form img {
   bottom: 15px;
   left: 15px;
   font-weight: bold;
-}
-
-.browser{
-  padding-left: 3%;
-  padding-right: 3%;
 }
 
 .browser .card{
@@ -283,4 +282,64 @@ form img {
 
 .big-card{
   width: 50%;
+}
+
+.private{
+  display: flex;
+  color: #191e3b;
+  border: 1px solid #191e3b4c;
+  border-radius: 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.private h1{
+  font-size: 30px;
+}
+
+.simple .simple-cards{
+  display: flex;
+  color: #191e3b;
+}
+
+.simple-cards .simple-card > div{
+  padding-top: 10px;
+}
+
+.simple .title{
+  font-weight: bold;
+}
+
+.rent{
+  background-image: url("../images/www.fewo-direkt.de-1750235358358/732141-0_2-VRBO_HOSTS_LA_SAUNA_NEBELING_0101.jpg_1.jpeg");
+  background-position:center;
+  background-size: cover;
+  height: 80vh;
+  align-content: center;
+}
+
+.rent-content{
+  background-color: white;
+  width: 35%;
+  padding: 20px;
+  margin-left: 5%;
+  color: #191e3b;
+  border-radius: 10px;
+}
+
+.rent-content h1{
+  font-size: 40px;
+  /* padding-right: 10rem; */
+  font-weight: 500;
+}
+
+.rent-content > div{
+  padding-top: 10px;
+}
+
+.rent-content button{
+  padding: 10px;
+  font-size: 17px;
 }
