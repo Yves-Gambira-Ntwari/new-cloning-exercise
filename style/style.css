@@ -5,22 +5,40 @@
 
 nav{
   background-color: white;
-
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
 }
 
 nav li{
   display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 5px;
+}
+
+nav a{
+  color: #191e3b;
 }
 
 a{
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 ul{
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav li img{
   width: 20px;
+  color: #191e3b;
+}
+
+main .main-header{
+  background-image: url("../images/www.fewo-direkt.de-1750235358358/VRBO_APFT2_BARCELONA_THERIN_HOUSE_2_4605_1.png.jpeg");
 }
