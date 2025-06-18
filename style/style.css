@@ -8,7 +8,7 @@ body {
 }
 
 img {
-  /* width: 200px; */
+  width: 200px;
 }
 
 .button button {
@@ -167,24 +167,24 @@ form img {
   color: #191e3b;
 }
 
-.find .cards {
+.cards {
   display: flex;
   overflow: auto;
   gap: 5px;
   padding: 10px;
 }
 
-.cards .img{
+.find .cards .img{
   background-color: #1668e3;
   width: 100%;
 }
-.cards .img img{
+.find .cards .img img{
   width: 160%;
   height: 40vh;
   
 }
 
-.cards .card{
+.find .cards .card{
   height: 40vh;
   background-color: #000000;
   overflow: hidden;
@@ -193,10 +193,31 @@ form img {
   position: relative;
 }
 
-.card .label {
+.find .card .label {
   color: white;
   position: absolute;
   bottom: 15px;
   left: 15px;
   font-weight: bold;
 }
+
+.browser .card{
+  
+  width: 25%;
+}
+
+.browser .img{
+  height: 40vh;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.browser .cards{
+  gap: 20px;
+}
+
+.browser .cards .img img{
+  width: 100%;
+  height: 40vh;
+}
+
