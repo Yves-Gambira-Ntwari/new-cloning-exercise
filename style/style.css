@@ -11,6 +11,10 @@ img {
   width: 200px;
 }
 
+section{
+  margin-top: 2rem;
+}
+
 .button button {
   padding: 5px;
   border-radius: 20px;
@@ -201,8 +205,12 @@ form img {
   font-weight: bold;
 }
 
+.browser{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
 .browser .card{
-  
   width: 25%;
 }
 
@@ -217,7 +225,62 @@ form img {
 }
 
 .browser .cards .img img{
-  width: 100%;
+  width: 150%;
   height: 40vh;
 }
 
+.browser button{
+  background-color: #257c54;
+  color: white;
+  border: none;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+.browser .card-footer{
+  margin-top: 10px;
+  color: #191e3b;
+}
+
+.browser .cards p{
+  font-weight: bold;
+}
+
+.browser span{
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.browser .type{
+  display: flex;
+  gap: 10px;
+}
+
+.browser .big-cards{
+  display: flex;
+  gap: 20px;
+}
+
+.big-card  .big-img{
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.big-card p{
+  color: #191e3b;
+}
+
+.big{
+  font-weight: bold;
+}
+
+.big-card img{
+  width: 100%;
+  height: 50vh;
+}
+
+.big-card{
+  width: 50%;
+}
