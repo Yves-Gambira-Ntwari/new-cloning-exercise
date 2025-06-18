@@ -1,9 +1,25 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-nav{
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+  /* width: 200px; */
+}
+
+.button button {
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+  background-color: #1668e3;
+  color: white;
+}
+
+nav {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -11,61 +27,64 @@ nav{
   position: sticky;
 }
 
-nav li{
+nav .logo img {
+  width: 200px;
+}
+
+nav li {
   display: flex;
   padding: 10px;
   border-radius: 10px;
   gap: 5px;
 }
 
-nav a{
+nav a {
   color: #191e3b;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
-ul{
+ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
 
-nav li img{
+nav li img {
   width: 20px;
   color: #191e3b;
 }
 
-main .main-header{
-  background-image: url("../images/www.fewo-direkt.de-1750235358358/VRBO_APFT2_BARCELONA_THERIN_HOUSE_2_4605_1.png_1.jpeg");
+main .main-header {
+  background-image: linear-gradient(rgba(0, 3, 6, 0.250), rgba(5, 9, 13, 0.250)), url("../images/www.fewo-direkt.de-1750235358358/VRBO_APFT2_BARCELONA_THERIN_HOUSE_2_4605_1.png_1.jpeg");
   background-position: center;
-  height: 80vh;
+  height: 85vh;
+  /* justify-items: center; */
+  align-content: center;
 }
 
-.content{
-  padding-top: 10%;
-}
-
-.main-header h1{
+.main-header p {
   color: white;
-  font-size: 30px;
-  margin-left: 10%;
+  font-size: 40px;
+  margin-left: 5%;
   padding: 20px;
 }
 
-form{
+form {
   width: 80%;
   display: flex;
-  margin-left: 10%;
+  margin-left: 5%;
   background-color: white;
   padding: 20px;
   gap: 10px;
+  border-radius: 10px;
 }
 
-form .input{
+form .input {
   display: flex;
   width: 100%;
   gap: 5px;
@@ -78,7 +97,7 @@ form .input{
   padding: 15px 20px;
 }
 
-.input input{
+.input input {
   width: 100%;
   border: none;
   outline: none;
@@ -86,17 +105,98 @@ form .input{
   font-size: 15px;
 }
 
-.input input::placeholder{
+.input input::placeholder {
   color: #191e3b;
 }
 
-.input.submit{
+.input.submit {
   background-color: #1668e3;
-  width: 30%;
+  width: 25%;
   border: none;
   border-radius: 20px;
 }
 
-form img{
+.input.submit input {
+  background-color: transparent;
+  color: white;
+}
+
+form img {
   width: 20px;
+}
+
+.section.message {
+  color: white;
+  padding: 10px;
+  justify-items: center;
+}
+
+.main-message {
+  display: flex;
+  align-items: center;
+  background-color: #191e3b;
+  width: 90%;
+  padding: 10px;
+  border-radius: 15px;
+  justify-content: space-between;
+
+}
+
+.section.message img {
+  width: 30px;
+  background-color: #aed1f3;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.section.message .content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.section.message p {
+  font-size: 20px;
+}
+
+.find {
+  padding: 10px 5%;
+}
+
+.section-header {
+  color: #191e3b;
+}
+
+.find .cards {
+  display: flex;
+  overflow: auto;
+  gap: 5px;
+  padding: 10px;
+}
+
+.cards .img{
+  background-color: #1668e3;
+  width: 100%;
+}
+.cards .img img{
+  width: 160%;
+  height: 40vh;
+  
+}
+
+.cards .card{
+  height: 40vh;
+  background-color: #000000;
+  overflow: hidden;
+  width: 25%;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card .label {
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-weight: bold;
 }
