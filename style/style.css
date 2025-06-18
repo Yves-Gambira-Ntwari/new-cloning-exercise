@@ -35,9 +35,17 @@ section{
 nav {
   background-color: white;
   display: flex;
-  justify-content: space-between;
   padding: 20px;
+  gap: 15rem;
   position: sticky;
+}
+
+.menu{
+  align-content: center;
+}
+
+nav .logo{
+  align-content: center;
 }
 
 nav .logo img {
@@ -49,6 +57,11 @@ nav li {
   padding: 10px;
   border-radius: 10px;
   gap: 5px;
+  /* align-content: center; */
+}
+
+.menu{
+  display: none;
 }
 
 nav a {
@@ -72,6 +85,10 @@ ul {
 nav ul{
   display: flex;
   justify-content: space-between;
+}
+
+aside{
+  display: flex;
 }
 
 nav li img {
@@ -159,7 +176,6 @@ form img {
   padding: 10px;
   border-radius: 15px;
   justify-content: space-between;
-
 }
 
 .section.message img {
@@ -194,15 +210,14 @@ form img {
   background-color: #1668e3;
   width: 100%;
 }
+
 .find .cards .img img{
   width: 160%;
   height: 40vh;
-  
 }
 
 .find .cards .card{
   height: 40vh;
-  background-color: #000000;
   overflow: hidden;
   width: 25%;
   border-radius: 20px;
@@ -413,5 +428,130 @@ footer .top{
   font-size: 13px;
   padding-bottom: 20px;
   justify-items: center;
+}
+
+@media (max-width: 600px) {
+  aside{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  nav{
+    padding: 0;
+    padding-left: 10px;
+    gap: 10px;
+    /* justify-content: space-between; */
+  }
+
+  nav ul{
+    padding-right: 20px;
+  }
+
+  nav ul li{
+    font-size: 13px;
+  }
+
+  a{
+    font-weight: 500;
+  }
+
+  nav .logo img {
+  width: 150px;
+  align-self: center;
+}
+
+.main-header p {
+  color: white;
+  font-size: 25px;
+}
+
+form {
+  width: 80%;
+  display: block;
+}
+
+form > div{
+  margin-top: 10px;
+} 
+
+form .input{
+  width: 90%;
+}
+
+.input.submit {
+  width: 90%;
+}
+
+.main-message {
+  display: grid;
+  padding: 20px;
+}
+
+.section.message p {
+  font-size: 15px;
+}
+
+.main-message .button button{
+  width: 100%;
+  margin-top: 15px;
+}
+
+.main-header{
+  font-weight: 500;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.find .cards .img img{
+  width: 160%;
+  height: 40vh;
+}
+
+.find .cards .card{
+  height: 40vh;
+  background-color: #000000;
+  overflow: hidden;
+  width: 100%;
+}
+
+.browser .card{
+  width: 100%;
+}
+
+.private{
+  display: block;
+}
+
+.simple .simple-cards{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.rent-content{
+  background-color: white;
+  width: 90%;
+  padding: 10px;
+  margin-left: 0;
+}
+
+.rent-content h1{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.rent-content button{
+  padding: 10px;
+  font-size: 14px;
+}
+
+.footer .top{
+  display: block;
+}
 
 }
