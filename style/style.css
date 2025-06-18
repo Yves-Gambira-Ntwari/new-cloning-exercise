@@ -40,5 +40,63 @@ nav li img{
 }
 
 main .main-header{
-  background-image: url("../images/www.fewo-direkt.de-1750235358358/VRBO_APFT2_BARCELONA_THERIN_HOUSE_2_4605_1.png.jpeg");
+  background-image: url("../images/www.fewo-direkt.de-1750235358358/VRBO_APFT2_BARCELONA_THERIN_HOUSE_2_4605_1.png_1.jpeg");
+  background-position: center;
+  height: 80vh;
+}
+
+.content{
+  padding-top: 10%;
+}
+
+.main-header h1{
+  color: white;
+  font-size: 30px;
+  margin-left: 10%;
+  padding: 20px;
+}
+
+form{
+  width: 80%;
+  display: flex;
+  margin-left: 10%;
+  background-color: white;
+  padding: 20px;
+  gap: 10px;
+}
+
+form .input{
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: transparent;
+  border: 1px solid #4e526ba3;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+
+.input input{
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #191e3b;
+  font-size: 15px;
+}
+
+.input input::placeholder{
+  color: #191e3b;
+}
+
+.input.submit{
+  background-color: #1668e3;
+  width: 30%;
+  border: none;
+  border-radius: 20px;
+}
+
+form img{
+  width: 20px;
 }
