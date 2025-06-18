@@ -9,6 +9,7 @@ body {
 
 img {
   width: 200px;
+  z-index: -999;
 }
 
 section{
@@ -39,6 +40,7 @@ nav {
   gap: 15rem;
   position: sticky;
   justify-content: space-between;
+  position: relative;
 }
 
 .menu{
@@ -91,6 +93,45 @@ nav ul{
 
 aside{
   display: flex;
+}
+
+.active{
+  display: block;
+  left: 0;
+  top: 0%;
+  height: 100vh;
+  padding: 20px;
+  color: #191e3b;
+  background-color: white;
+  position: fixed;
+  z-index: 9;
+  width: 0%;
+  overflow: hidden;
+  /* margin-left: -100%; */
+}
+
+.aside{
+  display: none;
+}
+
+.active{
+  margin-left: 0%;
+  width: 50%;
+
+}
+.active a{
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.active .button button{
+  width: 100%;
+  padding: 10px;
+}
+
+.active{
+  width: 50%;
 }
 
 nav li img {
@@ -433,9 +474,13 @@ footer .top{
 }
 
 @media (max-width: 600px) {
-  aside{
-    display: none;
-  }
+aside{
+  display: none;
+}
+
+.aside{
+  display: block;
+}
 
   .menu{
     display: block;
@@ -557,10 +602,4 @@ form .input{
   display: block;
 }
 
-}
-
-@media (max-width: 900px) {
-  .size-900{
-    display: none;
-  }
 }
