@@ -55,6 +55,10 @@ nav a {
   color: #191e3b;
 }
 
+nav i{
+  color: #1668e3;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -308,6 +312,10 @@ form img {
   color: #191e3b;
 }
 
+.simple .icon{
+  font-size: 40px;
+}
+
 .simple-cards .simple-card > div{
   padding-top: 10px;
 }
@@ -335,13 +343,9 @@ form img {
 
 .rent-content h1{
   font-size: 40px;
-  /* padding-right: 10rem; */
   font-weight: 500;
 }
 
-/* .rent-content > div{
-  padding-top: 10px;
-} */
 
 .rent-content button{
   padding: 10px;
